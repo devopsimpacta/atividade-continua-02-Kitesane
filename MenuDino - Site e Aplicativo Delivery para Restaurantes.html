@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>MenuDino - Site e Aplicativo Delivery para Restaurantes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MenuDino - Sistema de Pedido Online e Cardápio para Bares, Restaurantes, Pizzarias e Outros Setores da Alimentação">
+    <meta name="keywords" content="MenuDino, Consumer, Cardápio Online, Cardápio Grátis, Pedido Online, App, Delivery">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <link href="/Content/css?v=8OcKkgSoUPXr1pn-nPInWesYXVmIf-4IX0kssjxzTuc1" rel="stylesheet"/>
+
+    
+    <style>
+        #myModal .modal-dialog {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        #myModal .modal-body {
+            position: relative;
+            padding: 0px;
+        }
+
+        .close {
+            position: absolute;
+            right: -30px;
+            top: 0;
+            z-index: 999;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #fff;
+            opacity: 1;
+        }
+
+        @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            ul {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1803692059871488'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1803692059871488&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="/"><img src="/images/logo-menudino.png" class="img-fluid" style="height:80px" alt="MenuDino"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">INÍCIO <span class="sr-only">(atual)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">FUNCIONALIDADES</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">IMAGENS</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#pricing">PREÇOS</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTATO</a> </li>
+                                <li class="nav-item"><a href="#passoapasso" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">INICIAR GRÁTIS</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<header class="bg-gradient" id="home">
+    <div class="container mt-5">
+        <h1>Plataforma Completa de Delivery Online</h1>
+        <p class="tagline">Chega de Comissões. Receba Pedidos Ilimitados. Aumente suas vendas e economize com uma única solução. Plataforma completa para restaurantes.</p>
+
+        <p><a href="#passoapasso" class="btn btn-primary btn-lg mt-3">INICIAR GRÁTIS</a></p>
+    </div>
+    <div class="img-holder mt-3"><img src="/telas/pc-consumer-menudino.png" alt="phone" class="img-fluid"></div>
+</header>
+
+<div class="client-logos my-5">
+    <div class="container text-center">
+        <img src="/images/clientes-logos-consumer.png" alt="Clientes Menudino" class="img-fluid">
+    </div>
+</div>
+
+<div class="section light-bg" id="features">
+
+    <div class="container">
+
+        <div class="section-title">
+            <small>COMPARE</small>
+            <h3>Funcionalidades que vão fazer você se apaixonar</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Pedidos por Site e App</h4>
+                                <p class="card-text">Seus clientes podem fazer pedidos por seu site em computadores e celulares ou aplicativos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Clique e Retira</h4>
+                                <p class="card-text">Opção para seus clientes realizarem os pedidos de casa, o pagamento e apenas retirar no estabelecimento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Sistema de Gestão</h4>
+                                <p class="card-text">Integrado ao Consumer, solução de gestão na área da alimentação com milhares de clientes no Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center mt-5"><a href="/home/funcionalidades" class="btn btn-primary mt-3">Conheça todas as funcionalidades »</a></p>
+    </div>
+
+</div>
+<!-- // end .section -->
+<div class="section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>R$ 10 Bilhões é o tamanho do mercado de Delivery</h2>
+                <p class="mb-4">Levantamento realizado pelo Sebrae mostra o tamanho do mercado de DELIVERY no Brasil. Escolha o parceiro certo nessa jornada.</p>
+                <p><a href="#passoapasso" class="btn btn-primary">INICIAR GRÁTIS</a></p>
+            </div>
+        </div>
+        <div class="perspective-phone">
+            <img src="/images/menudino-consumer.png" alt="perspective phone" class="img-fluid">
+        </div>
+    </div>
+
+</div>
+<!-- // end .section -->
+
+<div class="section light-bg">
+    <div class="container">
+        <div class="section-title">
+            <small>COMPARE</small>
+            <h3>O que nos torna diferentes</h3>
+        </div>
+
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#communication">Completo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#schedule">App MenuDino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#messages">Consumer Desktop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#livechat">Consumer Mobile</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="communication">
+                <div class="d-flex flex-column flex-lg-row">
+                    <img src="/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    <div>
+
+                        <h2>Uma ferramenta, um processo</h2>
+                        <p class="lead">Integrado ao Consumer o MenuDino simplifica a gestão de seus pedidos, cardápio, estoque, controles financeiros, toda sua gestão em uma única ferramenta.</p>
+                        <p>
+                            O MenuDino é um produto 100% integrado ao Programa Consumer, o sistema de gestão de estabelecimentos na área da alimentação com mais de 100 Mil Downloads e milhares de clientes.
+                        </p>
+                        <p>
+                            Cadastre seu cardápio em uma única solução, controle o estoque a ficha técnica dos pratos, receba os pedidos do delivery e emita o cupom fiscal com poucos cliques.
+                        </p>
+                        <p>
+                            O MenuDino e o Consumer é superior em cada detalhe, compare e descubra os diferenciais dessas duas soluções juntas. Começe Grátis e surpreenda-se.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="schedule">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div>
+                        <h2>Acreditamos no poder da simplicidade</h2>
+                        <p class="lead">Quantos mais desconexos seus dados de gestão, pior para sua administração</p>
+                        <p>
+                            O MenuDino é a plataforma de delivery mais completa e simples, para quem deseja vender online, através de um site ou aplicativo. Com o MenuDino seus clientes já podem fazer o pagamento por cartões de crédito, configurar as áreas de entrega por geolocalização e mapeamento dos bairros.
+                        </p>
+                        <p>
+                            Configure sua logo, cores e todos os detalhes de seu site e aplicativo, de acordo com a identidade visual de seu restaurante. Acreditamos muito no poder da simplicidade. Por isso isso publicar seu site de delivery online no MenuDino é muito fácil e rápido.
+                        </p>
+                    </div>
+                    <img src="/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="messages">
+                <div class="d-flex flex-column flex-lg-row">
+                    <img src="/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    <div>
+                        <h2>Poderoso e superior em cada detalhe</h2>
+                        <p class="lead">Nossas técnicas e tecnologias nos permitem criar uma experiência incomparável.</p>
+                        <p>
+                            Cada detalhe no Consumer é o resultado de analises complexas e intensas por nossa equipe de desenvolvedores, buscando entregar sempre algo simples e incrível ao mesmo tempo.
+                        </p>
+                        <p>
+                            O resultado dessa obsessão por um produto superior a tudo o que já foi desenvolvido para a área da alimentação. É uma onda de elogios e amor verdadeiro, retribuídos por nossos milhares de clientes.
+                        </p>
+                        <p>
+                            O Consumer Desktop é um sistema de gestão completo, para todos os processos, seja pedidos, produção dos pratos, controle do estoque, ficha técnica, programas de fidelidade e emissão de cupom fiscal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="livechat">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div>
+                        <h2>Mais poder e produtividade</h2>
+                        <p class="lead">Seja em um computador, tablet ou celular o Consumer sempre estará presente.</p>
+                        <p>
+                            Um sistema instalado no Windows oferece desempenho e segurança imcomparável para nossos clientes que não podem ficar parados. Mas é inegável o poder da mobilidade de celulares e tablets.
+                        </p>
+                        <p>
+                            O Consumer Mobile é um conjunto de ferramentas que potencializam essa produtividade, comanda mobile para garçom, cardápio digital na mesa para clientes realizarem seus pedidos sozinhos e monitor e tablets de preparo na cozinha, completam essa solução.
+                        </p>
+                    </div>
+                    <img src="/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- // end .section -->
+
+<div class="section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/telas/pizza-menudino-app.png" alt="App para Pizzarias MenuDino" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <div class="box-package"><span class="ti-package gradient-fill ti-3x"></span></div>
+                    <h2>Site e App de Delivery</h2>
+                    <p class="mb-4">Comece GRATUITAMENTE criando seu site para Delivery Online Integrado ao Consumer e surpreenda-se.</p>
+                    <a href="#" class="btn btn-primary">Inciar Grátis</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- // end .section -->
+
+
+<div class="section light-bg" id="passoapasso">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 d-flex align-items-center">
+                <ul class="list-unstyled ui-steps">
+                    <li class="media">
+                        <div class="circle-icon mr-4">1</div>
+                        <div class="media-body">
+                            <h5>Instale o Programa Consumer</h5>
+                            <p>O primeiro passo para você ter seu cardápio online é instalar o Programa Consumer em um computador com Windows. <a href="#" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Ch7DkyLEfTY" data-target="#myModal">Veja o vídeo</a>.</p>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <div class="circle-icon mr-4">2</div>
+                        <div class="media-body">
+                            <h5>Cadastre seu Cardápio</h5>
+                            <p>Na sequência, cadastre todo os seus produtos no sistema, descrição dos pratos, fotos, categorias e mapeamento das áreas de entrega. <a href="#" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Ch7DkyLEfTY" data-target="#myModal">Veja o vídeo</a></p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="circle-icon mr-4">3</div>
+                        <div class="media-body">
+                            <h5>Publique seu Site</h5>
+                            <p>No Consumer escolha o endereço de seu site e clique em Publicar Cardápio. Pronto você já está pronto para receber pedidos. <a href="#" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Ch7DkyLEfTY" data-target="#myModal">Veja o vídeo</a></p>
+                            <p><a href="#" data-toggle="modal" data-target="#downloadModal" class="btn btn-primary btn-lg mt-3">INICIAR DOWNLOAD</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="/telas/menudino-acai.png" alt="iphone" class="img-fluid">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- // end .section -->
+<div class="section">
+    <div class="container">
+        <div class="section-title">
+            <small>Depoimentos</small>
+            <h3>O que nossos clientes estão dizendo</h3>
+        </div>
+
+        <div class="testimonials owl-carousel">
+            <div class="testimonials-single">
+                <img src="/images/menudino-gil.jpg" alt="client" class="client-img">
+                <blockquote class="blockquote">Com o MenuDino eu tenho meu site e aplicativo de delivery exclusivo, controle todos meus pedidos, estoque, pontos do programa de fidelidade em uma única ferramenta, é incrível a economia de tempo utilizando uma única solução.</blockquote>
+                <h5 class="mt-4 mb-2">Gilmar Dias</h5>
+                <p class="text-primary">Gil Lanches</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- // end .section -->
+
+
+<div class="section light-bg" id="gallery">
+    <div class="container">
+        <div class="section-title">
+            <small>Uma Solução Consumer</small>
+            <h3>Crie seu Site e App com o MenuDino</h3>
+        </div>
+
+        <div class="img-gallery owl-carousel owl-theme">
+            <img src="/telas/menudino-pizza.png" alt="MenuDino Pizzaria">
+            <img src="/telas/menudino-acai.png" alt="MenuDino Loja Açaí">
+            <img src="/telas/tela-iphone-lanche.png" alt="MenuDino Lanchonete">
+            <img src="/telas/menudino-restaurante-japones.png" alt="MenuDino Restaurante Japonês">
+            <img src="/telas/tela-iphone-adicionais.png" alt="MenuDino Adicionais">
+            <img src="/telas/tela-iphone-cadastro.png" alt="MenuDino Cadastro">
+            <img src="/telas/tela-iphone-carrinho.png" alt="MenuDino Carrinho">
+        </div>
+
+    </div>
+
+</div>
+<!-- // end .section -->
+
+<div class="section" id="pricing">
+    <div class="container">
+        <div class="section-title">
+            <small>SEU Site e Aplicativo EXCLUSIVO</small>
+            <h3>Plataforma COMPLETA de Delivery<br /> Fidelize seus clientes em seu canal de vendas.</h3>
+        </div>
+
+        <div class="card-deck">
+            <div class="card pricing">
+                <div class="card-head">
+                    <h4 class="mb-3">Site Delivery</h4>
+                    <p class="small">Consumer PREMIUM 1 PC (Incluso)</p>
+                    <span class="price">R$84/Mês</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="list-group-item">Tenha um site de delivery para seus clientes pedirem online</div>
+                    <div class="list-group-item">Os pedidos chegam integrados ao Consumer, sem retrabalhos</div>
+                    <div class="list-group-item">Seu cliente pode pagar online por cartão de crédito (CIELO)</div>
+                    <div class="list-group-item"><del>Aplicativo do restaurante<br />Android</del></div>
+                    <div class="list-group-item"><del>Aplicativo do restaurante<br />iOS</del></div>
+                </ul>
+                <div class="card-body text-center">
+                    <a href="https://loja.programaconsumer.com.br/cartcheckout/configurar?CodigosProdutos=2&CodigosProdutos=8&QtdMeses=12" class="btn btn-light btn-lg btn-block" target="_blank">COMPRE JÁ</a>
+                    <br /><br />
+                    <small class="text-primary">Já tem uma assinatura do Consumer?<br /> Adicione o MenuDino Site por R$49/mês.<br /></small>
+                </div>
+            </div>
+            <div class="card pricing popular">
+                <div class="card-head">
+                    <h4 class="mb-3">Site + Android</h4>
+                    <p class="small">Consumer PREMIUM 1 PC (Incluso)</p>
+                    <span class="price">R$134/Mês</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="list-group-item">Tenha um site de delivery para seus clientes pedirem online</div>
+                    <div class="list-group-item">Os pedidos chegam integrados ao Consumer, sem retrabalhos</div>
+                    <div class="list-group-item">Seu cliente pode pagar online por cartão de crédito (CIELO)</div>
+                    <div class="list-group-item">Aplicativo do restaurante<br />Android</div>
+                    <div class="list-group-item"><del>Aplicativo do restaurante<br />iOS</del></div>
+                </ul>
+                <div class="card-body text-center">
+                    <a href="https://loja.programaconsumer.com.br/cartcheckout/configurar?CodigosProdutos=2&CodigosProdutos=9&QtdMeses=12" class="btn btn-light btn-lg btn-block" target="_blank">COMPRE JÁ</a>
+                    <br /><br />
+                    <small class="text-primary">Já tem uma assinatura do Consumer?<br /> Adicione o MenuDino Site por R$99/mês.<br /></small>
+                </div>
+            </div>
+            <div class="card pricing">
+                <div class="card-head">
+                    <h4 class="mb-3">Site + Android e iOS</h4>
+                    <p class="small">Consumer PREMIUM 1 PC (Incluso)</p>
+                    <span class="price">R$154/Mês</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="list-group-item">Tenha um site de delivery para seus clientes pedirem online</div>
+                    <div class="list-group-item">Os pedidos chegam integrados ao Consumer, sem retrabalhos</div>
+                    <div class="list-group-item">Seu cliente pode pagar online por cartão de crédito (CIELO)</div>
+                    <div class="list-group-item">Aplicativo do restaurante<br />Android</div>
+                    <div class="list-group-item">Aplicativo do restaurante<br />iOS</div>
+                </ul>
+                <div class="card-body text-center">
+                    <a href="https://loja.programaconsumer.com.br/cartcheckout/configurar?CodigosProdutos=2&CodigosProdutos=10&QtdMeses=12" class="btn btn-light btn-lg btn-block" target="_blank">COMPRE JÁ</a>
+                    <br /><br />
+                    <small class="text-primary">Já tem uma assinatura do Consumer?<br /> Adicione o MenuDino Site/App  por R$119/mês.<br /></small>
+                </div>
+            </div>
+        </div>
+        <!-- // end .pricing -->
+
+    </div>
+
+</div>
+<!-- // end .section -->
+
+
+<div class="section pt-0">
+    <div class="container">
+        <div class="section-title">
+            <small>FAQ</small>
+            <h3>Dúvidas Frequentes</h3>
+        </div>
+
+        <div class="row pt-4">
+            <div class="col-md-6">
+                <h4 class="mb-3">Preciso de um computador para usar o MenuDino?</h4>
+                <p class="light-font mb-5">Sim, você precisa de um computador em seu restaurante para instalar o Consumer, cadastrar seu cardápio e fazer a publicação no MenuDino. E para assinantes, os pedidos dos clientes chegam direto no sistema.</p>
+
+                <h4 class="mb-3">Qual a vantagem em usar o MenuDino com o Consumer?</h4>
+                <p class="light-font mb-5">O Consumer é um poderoso sistema de gestão, a ideia é você unificar todos seus controles de pedidos online e também de seu restaurante offline, tudo no Consumer. Simplificando controle do estoque, produção, relatórios financeiros e muito mais.</p>
+
+                <h4 class="mb-3">Posso fazer o teste grátis antes da compra?</h4>
+                <p class="light-font mb-3">Com certeza, você pode usar a versão grátis do Consumer, cadastrar e publicar seu cardápio. E mesmo após a compra, oferecemos uma garantia de 100% de satisfação ou devolução de tudo o que pagou se em até 30 dias não estiver satisfeito.</p>
+                <p class="light-font mb-5">Lembrando que na versão grátis, você pode cadastrar e publicar seu cardápio normalmente, receber pedidos integrados no Consumer, porém opções como pagamento online e aplicativos na apple store e Google Play são publicados após assinatura de um plano.</p>
+
+                <h4 class="mb-3">Qual o prazo para liberar meu site delivery e aplicativo?</h4>
+                <p class="light-font mb-5">Após confirmação do pagamento, o site delivery é liberado imediatamente. Para a publicação do aplicativo Android em até 30 dias e para o aplicato na iOS em até 60 dias.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Vocês ajudam a cadastrar os produtos no sistema?</h4>
+                <p class="light-font mb-5">O cadastro das categorias, produtos no sistema, descrição dos pratos deve ser feito diretamente pelo cliente de maneira muito simples. Qualquer dúvida nesse processo, nossa equipe de suporte estará a disposição.</p>
+
+                <h4 class="mb-3">Como funciona a contratação e o pagamento?</h4>
+                <p class="light-font mb-5">Trabalhamos com assinatura por período de uso, você pode contratar nossos planos de 3 meses, 6 meses e 12 meses de uso. Pagar por boleto bancário a vista com 10% de desconto ou no cartão de crédito em até 12 vezes sem juros.</p>
+
+                <h4 class="mb-3">Porque devo escolher o MenuDino?</h4>
+                <p class="light-font mb-3">Porque você vai parar de perde tempo e dinheiro, escolhendo uma solução completa, com milhares de clientes no Brasil, inovadora, fácil e em evolução constante. Tudo isso com um ótimo custo benefício e suporte profissional de qualidade.</p>
+                <p class="light-font mb-5">Com nossa solução, você não precisa ficar realizando cadastros em vários sistemas diferentes. Site e App, gerenciamento de pedidos no seu estabelecimento, controle da produção, programa de fidelidade, emissão de cupom fiscal, encontre tudo isso em nossa solução.</p>
+
+                <h4 class="mb-3">Existe algum custo adicional para meu app?</h4>
+                <p class="light-font mb-5">Para aplicatos em celulares Android não existe nenhum custo. Apenas para celulares Apple iOS o cliente precisa já ter uma conta na Apple Developer e pagar o valor de U$99/Anuais. <a href="http://ajuda.programaconsumer.com.br/como-criar-conta-apple-developer/" target="_blank">Veja aqui</a> como criar sua conta.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- // end .section -->
+
+
+<div class="section bg-gradient" id="download">
+    <div class="container">
+        <div class="call-to-action">
+
+            <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+            <h2>Aplicativo para Restaurante</h2>
+            <p class="tagline">Tenha um aplicativo do seu restaurante nas principais lojas de aplicativos do mundo.</p>
+            <div class="my-4">
+                <a href="#"><img src="/images/Loja_AppStore.png" alt="icon"></a>
+                <a href="#"><img src="/images/Loja_Google_Play.png" alt="icon"></a>
+            </div>
+            <p class="text-primary"><small><i>E ainda um site exclusivo de seu restaurante para pedidos online<br /> integrados ao Programa Consumer = )</i></small></p>
+        </div>
+    </div>
+
+</div>
+<!-- // end .section -->
+
+<div class="light-bg py-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left">
+                <p class="mb-2"> <span class="ti-location-pin mr-2"></span>Clientes em todos os estados do Brasil</p>
+                <div class=" d-block d-sm-inline-block">
+                    <p class="mb-2">
+                        <span class="ti-email mr-2"></span> <a class="mr-4" href="http://ajuda.programaconsumer.com.br/" target="_blank">Central de Suporte</a>
+                    </p>
+                </div>
+                <div class="d-block d-sm-inline-block">
+                    <p class="mb-0">
+                        <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">(11) 2626-5184</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/programaconsumer/" target="_blank"><span class="ti-facebook"></span></a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- // end .section -->
+<!-- Modal YT-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay; encrypted-media"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Download-->
+<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="progress" style="height: 26px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-default progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                75% Completo
+                            </div>
+                        </div>
+                        <p class="text-center text-muted small mt-2">
+                            Falta Pouco! Você está a um passo de conhecer uma incrível ferramenta para seu negócio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4 text-center" style="font-size: 160px;">
+                        <i class="fa fa-cloud-download-alt gradient-fill"></i>
+                    </div>
+
+                    <div class="col-md-8">
+
+<form action="/" method="post"><input name="__RequestVerificationToken" type="hidden" value="mmoPcsZHZrYae-QM95NDQhr23MUYNtO5NWjjC0AxUOyUxa2ECHYfRaux11ni_ykbAPREh68l1S1l-dopYX2qT7RPZHnglMT534aIotbhPFM1" />                            <div class="col-md-12 text-center mb-4">
+                                <h5 class="text-uppercase">Digite seu e-mail para começar</h5>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control form-control-lg text-box single-line" data-val="true" data-val-required="O campo E-mail é obrigatório." id="Email" name="Email" placeholder="E-mail" type="email" value="" />
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-lg btn-primary btn-download text-uppercase">Iniciar Download »</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-muted small text-center">
+                                <i class="fa fa-lock"></i>
+                                Não fazemos spam, seus dados estão seguros.
+                            </div>
+</form>                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT MenuDino by Consumer © 2019. Todos os direitos reservados.</small></p>
+
+        <small>
+            <a href="/delivery" class="m-2">DELIVERY</a>
+            <a href="https://www.programaconsumer.com.br/aempresa" target="_blank" class="m-2">SOBRE A EMPRESA</a>
+            <a href="/home/TermosDeUso" target="_blank" class="m-2">TERMOS DE USO</a>
+            <a href="/home/PoliticaDePrivacidade" target="_blank" class="m-2">PRIVACIDADE</a>
+        </small>
+    </footer>
+
+    <script src="/bundles/jquery?v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81"></script>
+
+    <script src="/bundles/jqueryval?v=ewwbEwxCzNIunbw9c2Y5X5_ldbOkIBIkUo-LvchX7I81"></script>
+
+    <script src="/bundles/bootstrap?v=ir0mDkNAz_k4z2mgliXblsRoAsfq9-vb5ooZ6PIuRNk1"></script>
+
+    <script src="/bundles/sitescripts?v=-kyVi-_BZQb6EpLZCKm_HpXnh_ltqwq5V47CovrmcFA1"></script>
+
+    
+
+    <script>
+        $(document).ready(function () {
+
+            // Gets the video src from the data-src on each button
+
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            //console.log($videoSrc);
+
+            // when the modal is opened autoplay it
+            $('#myModal').on('shown.bs.modal', function (e) {
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1");
+            });
+
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            });
+
+            // document ready
+        });
+    </script>
+
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-102752302-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
